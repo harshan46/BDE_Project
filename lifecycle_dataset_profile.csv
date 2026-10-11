@@ -1,0 +1,8 @@
+event_type,total_events,unique_files
+file_accessed,33389,3879
+file_created,352,347
+file_deleted,58,58
+file_updated,3954,390
+file_written,4306,731
+permission_changed,6,1
+version_deleted,3673,3673
