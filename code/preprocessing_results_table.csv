@@ -1,6 +1,6 @@
-Preprocessing Stage / Attribute,Raw State (CLUE-LDS Ingestion),Cleaned / Processed State,Methodology & Action
-Total Raw Event Records,"100,000 JSON log entries","2,000 Aggregated File Entities",Aggregated by unique repository FilePath
-Missing / Null File Paths,"54,262 records without path",0 (100% Validated),Filtered non-file administrative telemetry
+Stage / Attribute,Raw State,Cleaned State,Action
+Raw Stream Ingestion,"100,000 JSON log entries (CLUE-LDS)","2,000 Aggregated File Entities",Aggregated by unique repository FilePath
+Missing / Null File Paths,"54,262 records without valid path",0 (100% Validated),Filtered non-file administrative telemetry
 Timestamp Format,Unparsed ISO-8601 strings,Standardized Datetime / UNIX,Parsed to compute temporal recency Delta-t
 Feature Representation,Unstructured text params,"3-D Dense Vectors [FF, Delta-t, SS]",Spark VectorAssembler feature scaling
 Lifecycle Class Target,Unlabeled streaming logs,"Multi-class [Hot: 32%, Cool: 44%, ROT: 24%]",Applied IEEE ground-truth heuristic rules

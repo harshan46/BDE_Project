@@ -1,5 +1,6 @@
 # Large raw dataset files (>100MB cannot be pushed to GitHub)
 clue.json
+data/clue.json
 *.json.gz
 
 # Python cache
